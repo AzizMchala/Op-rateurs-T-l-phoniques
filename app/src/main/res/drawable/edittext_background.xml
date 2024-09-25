@@ -1,0 +1,23 @@
+<!-- res/drawable/edittext_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Set background color (light grey) -->
+    <solid android:color="#F5F5F5" />
+
+    <!-- Set the border radius (rounded corners) -->
+    <corners android:radius="12dp" />
+
+    <!-- Set border stroke with a subtle outline -->
+    <stroke
+        android:width="2dp"
+        android:color="#CCCCCC" />
+
+    <!-- Padding for inner content -->
+    <padding
+        android:left="12dp"
+        android:top="10dp"
+        android:right="12dp"
+        android:bottom="10dp" />
+
+
+</shape>

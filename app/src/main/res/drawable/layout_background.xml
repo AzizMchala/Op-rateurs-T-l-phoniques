@@ -1,0 +1,30 @@
+<!-- res/drawable/layout_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Layer -->
+    <item>
+        <shape>
+            <!-- Subtle background gradient for contrast -->
+            <gradient
+                android:startColor="#BFD9F3"
+                android:endColor="#5DAFD5"
+                android:angle="90" />
+        </shape>
+    </item>
+
+    <!-- Foreground Layer with subtle shadow for depth -->
+    <item android:left="4dp" android:right="4dp" android:top="6dp" android:bottom="6dp">
+        <shape>
+            <!-- Foreground color for a slight contrast -->
+            <solid android:color="#D8F6FA" />
+
+            <!-- Rounded corners for modern look -->
+            <corners android:radius="16dp" />
+
+            <!-- Stroke for light border -->
+            <stroke
+                android:width="2dp"
+                android:color="#DDDDDD" />
+        </shape>
+    </item>
+</layer-list>

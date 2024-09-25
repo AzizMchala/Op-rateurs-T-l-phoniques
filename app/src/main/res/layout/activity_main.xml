@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entrer votre login et mod de passe"
+        android:layout_marginTop="700px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:textSize="50px"
+        />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titre"
+        android:layout_marginTop="50px"
+        android:background="@drawable/edittext_background"
+       android:hint="login" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="50px"
+        android:hint="password"/>
+
+    <Button
+        android:id="@+id/connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginRight="250px"
+        android:layout_marginTop="50px"
+        android:text="Button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

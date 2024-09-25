@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/layout_background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="60dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/avatar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/buttonTakePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@id/textView7"
+        android:text="Prendre Photo"/>
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/textSaisir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="70px"
+        android:textSize="18sp"
+        android:text="Saisir votre numero de telephone"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/textSaisir"
+        android:hint="numero"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ligne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/editNumero"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:text=" entrer votre code de recharge(14 chiffre)"
+        app:layout_constraintTop_toBottomOf="@id/ligne"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintTop_toBottomOf="@id/textCode"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textRecharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="recharger votre ligne"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editCode"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/codeComplet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/textRecharge"
+        android:background="@drawable/edittext_background"
+        android:text="Name"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonAppeler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textRecharge"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pour consulter le solde de votre ligne:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/codeComplet"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/premiereCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView5"
+        app:layout_constraintRight_toLeftOf="@id/button2"
+        android:layout_margin="30dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView5"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="Button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
